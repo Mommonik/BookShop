@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShop</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Кнопка входа -->
+    <div class="vhod-none">
+      <div class="register">
+        <div class="modal-vhod">
+          <p class="registration">Вход</p>
+          <div class="modal-register-input">
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+          </div>
+          <div class="vhod-btns">
+            <button class="register-cancel">Назад</button>
+            <button class="vhod-voiti">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Кнопка регестрации -->
+    <div class="register-none">
+      <div class="register">
+        <div class="modal-register">
+          <p class="registration">Регестрация</p>
+          <div class="modal-register-input">
+            <input class="reg-name" type="text" placeholder="Ваше имя" />
+            <input type="text" placeholder="E-mail" />
+            <input type="password" placeholder="Пароль" />
+            <input type="password" placeholder="Подтверждение пароля" />
+          </div>
+          <div class="agree">
+            <input type="checkbox" />
+            <p>I agree to the <a href="#">terms</a></p>
+          </div>
+          <div class="register-btns">
+            <button class="register-cancel">Назад</button>
+            <button class="register-create">Создать аккаунт</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Навигация -->
+    <nav>
+      <div class="gamburger-menu">
+        <div class="span-flex">
+          <span class="span1 ix1"></span>
+          <span class="span2"></span>
+          <span class="span3 ix3"></span>
+        </div>
+      </div>
+      <div class="side-bar">
+        <div class="side-bar-links">
+          <a href="./index.html">Главная</a>
+          <a href="./shop.html" target="_blank">Магазин</a>
+          <a href="#">Адреса</a>
+          <a href="#">Доставка</a>
+          <a href="#">Вопросы</a>
+        </div>
+      </div>
+      <div class="search">
+        <input class="search" type="text" placeholder="Название книги..." />
+        <a href="#"
+          ><img
+            class="search-btn"
+            src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="nav-flex">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1374/1374128.png"
+            alt=""
+        /></a>
+        <a class="voiti" href="#">Войти</a>
+        <a class="register-btn" href="#">Регестрация</a>
+      </div>
+    </nav>
+    <!-- Приветствие -->
+    <section id="welcome">
+      <div class="welcome-flex">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators"></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="0">
+              <img
+                src="https://www.malayalamnewsdaily.com/sites/default/files/2020/06/19/day.jpg"
+                class="d-block w-100"
+                alt="..."
+                width="770px"
+                height="570px"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="0"></div>
+            <div class="carousel-item" data-bs-interval="0"></div>
+          </div>
+        </div>
+
+        <div class="welcome-text">
+          <div class="welcome-text1">
+            <h1>Книга – устройство, способное разжечь воображение</h1>
+            <p>
+              Книга очень полезный ресурс. Покупайте его у нас по самым низким
+              ценам. И качество поставки очень высокое
+            </p>
+          </div>
+          <div class="prenext">
+            <div class="pre">
+              <div class="arrow-left">
+                <img src="./img/Vector (1).png" alt="" />
+                <p>Предыдущий</p>
+              </div>
+              <p>Зеленая миля</p>
+            </div>
+            <a
+              href="./shop.html"
+              style="text-decoration: none; color: white"
+              target="_blank"
+            >
+              <div class="next">
+                <div class="arrow-right">
+                  <p>Перейти</p>
+                  <img src="./img/Vector (2).png" alt="" />
+                </div>
+                <p>Купить книгу</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Карты с преимуществами -->
+    <section id="card-advantages">
+      <div class="card-advantages-flex">
+        <div class="card-adv">
+          <div class="track">
+            <img src="./img/free-icon-delivery-truck-869121.png" alt="" />
+            <h2>
+              Быстрая
+              <br />
+              Досатвка
+            </h2>
+          </div>
+          <p>
+            Составляем эффективный маршрут и отправляем к вам ближайших
+            курьеров, минимизируя его стоимость
+          </p>
+        </div>
+        <div class="card-adv">
+          <div class="track">
+            <img
+              src="http://s1.iconbird.com/ico/2013/6/281/w256h25613715677480005BookmarkOpen.png"
+              alt=""
+            />
+            <h2>
+              Большой
+              <br />
+              Ассортимент
+            </h2>
+          </div>
+          <p>
+            У нас очень большой ассортимент книг. Можете выбрать книгу по любому
+            вкусу.
+          </p>
+        </div>
+        <div class="card-adv">
+          <div class="track">
+            <img
+              src="https://image.flaticon.com/icons/png/512/5223/5223519.png"
+              alt=""
+            />
+            <h2>
+              Высокое
+              <br />
+              Качество
+            </h2>
+          </div>
+          <p>
+            Качество 100%. Все изделение сделаны из качественной древесины.
+            Качество печати на высоком уровне.
+          </p>
+        </div>
+        <div class="card-adv">
+          <div class="track">
+            <img
+              src="https://image.flaticon.com/icons/png/512/2155/2155823.png"
+              alt=""
+            />
+            <h2>
+              Низкие
+              <br />
+              Цены
+            </h2>
+          </div>
+          <p>
+            Общедоступные цены. Вы можете купить хорошие книги, за хорошие цены.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Рекомендуемые книги -->
+    <section id="recomended-books">
+      <div class="recomended-books-flex">
+        <div class="recomended-books-text">
+          <h2>Рекомендуемые книги</h2>
+          <button>
+            Сначала дешевые
+            <img src="./img/First cheaper.png" width="10px" alt="" />
+          </button>
+        </div>
+        <hr />
+      </div>
+      <div class="recomended-flex">
+        <div class="rec-book">
+          <div class="rec-img">
+            <img
+              src="https://s1.livelib.ru/boocover/1003823201/o/57e3/Stiven_King__Zelenaya_milya.jpeg"
+              alt=""
+            />
+          </div>
+          <p>Зеленая миля</p>
+          <p>3500тг</p>
+        </div>
+        <div class="rec-book">
+          <div class="rec-img">
+            <img
+              src="https://s1.livelib.ru/boocover/1003634473/o/3ca5/Margaret_Mitchell__Unesennye_vetrom.jpeg"
+              alt=""
+            />
+          </div>
+          <p>Унесенные ветром</p>
+          <p>4000тг</p>
+        </div>
+        <div class="rec-book">
+          <div class="rec-img">
+            <img
+              src="https://s1.livelib.ru/boocover/1001569364/o/bdff/Ketrin_Stokett__Prisluga.jpeg"
+              alt=""
+            />
+          </div>
+          <p>Прислуга</p>
+          <p>3000тг</p>
+        </div>
+        <div class="rec-book">
+          <div class="rec-img">
+            <img
+              src="https://s1.livelib.ru/boocover/1005631162/o/36b7/Aleksandr_Dyuma__Graf_MonteKristo.jpeg"
+              alt=""
+            />
+          </div>
+          <p>Граф Монте-Кристо</p>
+          <p>3800тг</p>
+        </div>
+        <div class="rec-book">
+          <div class="rec-img">
+            <img
+              src="https://s1.livelib.ru/boocover/1000243672/o/6c2d/Dzhordzh_Martin__Burya_mechej.jpeg"
+              alt=""
+            />
+          </div>
+          <p>Буря мечей</p>
+          <p>2500тг</p>
+        </div>
+      </div>
+    </section>
+    <!-- Реклама -->
+    <section id="advertisment">
+      <div class="advertisment-flex">
+        <div class="advertisment1-flex-width">
+          <div class="advertisment1-flex">
+            <div class="advertisment1-flex-text">
+              <h1>
+                Покупайте побольше книг, это поможет вам расширть кругозор
+              </h1>
+              <p>
+                Чтение книг увеличивает словарный запас человека, способствует
+                выработке более чёткого и ясного мышления, что позволяет
+                формулировать и выражать мысли яснее. Убедиться в этом каждый
+                может на собственном примере.
+              </p>
+            </div>
+            <img src="./img/Книга глова.png" height="290px" alt="" />
+          </div>
+        </div>
+        <div class="advertisment2-flex">
+          <img
+            src="https://rebrainme.com/blog/wp-content/uploads/2020/05/devops_books.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Переход в магазин -->
+    <section id="shop">
+      <div class="shop-flex">
+        <div class="shop-text-btn-flex">
+          <div class="shop-text">
+            <h1>
+              Покупайте свои любимые книги <br />
+              у нас
+            </h1>
+          </div>
+          <div class="shop-btn">
+            <a href="./shop.html" target="_blank"><button>Магазин</button></a>
+          </div>
+        </div>
+        <div class="shop-img">
+          <img src="./img/книгу у нас.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-flex">
+        <div class="footer1">
+          <h2>BookShop</h2>
+          <b><p>BookShop House</p></b>
+          <p>
+            Kazakhstan, Nur-Sultan, NIS, PHMN, 251 classroom. <br />
+            Made by Daulet
+          </p>
+        </div>
+        <div class="footer2">
+          <h4>Главная</h4>
+          <a
+            href="./shop.html"
+            target="_blank"
+            style="text-decoration: none; color: black"
+            ><h4>Магазин</h4></a
+          >
+        </div>
+        <div class="footer3">
+          <h4>Адреса</h4>
+          <h4>Доставка</h4>
+          <h4>Вопросы</h4>
+        </div>
+        <div class="footer4">
+          <h4>Связаться с нами</h4>
+          <input type="text" placeholder="E-mail" /> <br />
+          <button>Submit</button>
+        </div>
+      </div>
+    </footer>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
